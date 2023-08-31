@@ -1,0 +1,101 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 50px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.div_logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+nav a{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+.brand_name{
+    width: 40px;
+}
+.nav_bar_img{
+    width: 25px;
+    cursor: pointer;
+}
+.navlogo{
+    display: flex;
+    gap: 20px;
+}
+.nav-btn{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    display: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+.nav-new-logo{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+
+
+@media only screen and (max-width: 992px){
+    .nav-btn{
+        display: block;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        transition: 0.8s;
+        transform: translateY( -100vh);
+        background-color: #ffffff;
+        flex-direction: column;
+        align-items: start;
+        padding: 20px;
+        justify-content: start;
+    }
+    .mobile_responsive{
+        transform: none;
+    }
+    .navlogo{
+        display: none;
+    }
+    .brand_name{
+        width: 30px;
+    }
+    header{
+        padding: 8px 20px;
+    }
+    nav a{
+        color: black ;
+        font-size: 20px;
+    }
+    .nav-close-btn{
+        color: black;
+        position: fixed;
+        top: 8px;
+        right: 16px;
+    }
+}
